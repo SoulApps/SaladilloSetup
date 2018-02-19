@@ -807,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2770869, g: 0.78628355, b: 0.9191176, a: 1}
+  m_Color: {r: 0.96445245, g: 0, b: 0.97794116, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -836,6 +836,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1779500663}
+  - component: {fileID: 1779500664}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -858,6 +859,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1779500664
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779500662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5e50e01c5c594045ad396571a72eac7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1896595811
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +887,7 @@ GameObject:
   - component: {fileID: 1896595815}
   - component: {fileID: 1896595814}
   - component: {fileID: 1896595813}
+  - component: {fileID: 1896595816}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -941,7 +960,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1052986675}
   m_PlaneDistance: 5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -952,3 +971,16 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1896595816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1896595811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61a235431bd6d944b2662e3af90c693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counting: 0
+  ended: 0

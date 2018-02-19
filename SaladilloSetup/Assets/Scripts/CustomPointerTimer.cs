@@ -40,7 +40,7 @@ public class CustomPointerTimer : MonoBehaviour
         }
 
         // Se obtiene la imagen del reloj
-        image = GetComponent<Image>();
+        image = GetComponentInChildren<Image>();
     }
 
     // Update is called once per frame
